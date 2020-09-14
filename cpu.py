@@ -138,7 +138,7 @@ class CPU:
         self.reg[self.stack_pointer] += 1
         self.PC += 2
 
-    # Sprint functions
+    
     def CMP(self):
         self.alu("CMP", self.ram[self.PC+1], self.ram[self.PC+2])
         self.PC += 3
